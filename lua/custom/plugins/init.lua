@@ -17,5 +17,6 @@ return {
   end,
 
  "mfussenegger/nvim-dap",
-  dependencies = { 'hrsh7th/nvim-cmp', 'rcarriga/nvim-dap-ui'  },
+ "rcarriga/nvim-dap-ui",
+  dependencies = { 'hrsh7th/nvim-cmp', 'mfussenegger/nvim-dap'  },
 }
