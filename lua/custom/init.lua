@@ -51,4 +51,10 @@ vim.keymap.set('n', '<leader>xn',function () dap.step_over() end )
 vim.keymap.set('n', '<leader>xi',function () dap.step_into() end )
 vim.keymap.set('n', '<leader>xo',function () dap.step_out() end )
 vim.keymap.set('n', '<leader>xd',function () dap.continue() end )
-vim.keymap.set('n', '<leader>xr',function () dap.repl.open() end )
+vim.keymap.set('i', '"','""<left>' )
+vim.keymap.set('i', "'","''<left>" )
+vim.keymap.set('i', '[','[]<left>' )
+vim.keymap.set('i', '(','()<left>' )
+vim.keymap.set('i', '{','{}<left>' )
+vim.opt.shiftwidth = 2
+vim.opt.makeprg ='sh build.sh'
